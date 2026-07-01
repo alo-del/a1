@@ -1,0 +1,87 @@
+body {
+  background: #eef3f8;
+  color: #17202a;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9e2ec;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(21, 35, 52, 0.08);
+  padding: 1.25rem;
+}
+
+.stats-panel {
+  background: #17202a;
+  border-radius: 8px;
+  color: #ffffff;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  padding: 1rem;
+}
+
+.stats-number,
+.stats-label {
+  display: block;
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stats-label {
+  color: #c5d3e0;
+  font-size: 0.875rem;
+}
+
+.form-icon {
+  align-items: center;
+  background: #e7f1ff;
+  border-radius: 8px;
+  color: #0d6efd;
+  display: inline-flex;
+  font-size: 1.5rem;
+  height: 48px;
+  justify-content: center;
+  min-width: 48px;
+}
+
+.icon-button {
+  align-items: center;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.empty-state {
+  border: 1px dashed #aebfd0;
+  border-radius: 8px;
+  color: #536271;
+  padding: 2.5rem 1rem;
+}
+
+.empty-state .bi {
+  font-size: 2rem;
+}
+
+.table {
+  min-width: 760px;
+}
+
+@media (max-width: 575.98px) {
+  .panel {
+    padding: 1rem;
+  }
+
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+}
